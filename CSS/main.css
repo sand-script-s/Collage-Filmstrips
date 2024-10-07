@@ -1,0 +1,77 @@
+body, html {
+    background-image: url(backgrounds/stone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    max-width: 45rem; /* Changed to max-width with a rem unit */
+    min-width: 45rem;
+    min-height: 100vh; /* Minimum height is 100% of the viewport height */
+    /* border: 1px solid #000; */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Align items to the top */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+
+    /* Glass effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.container-rightsection {
+    width: 90%;
+    /* border: 1px solid #000; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    padding-bottom: 6px;
+    /* border: 1px solid #ccc; */
+}
+
+.ytvids {
+    width: 90%;
+}
+
+.ytvids.marg10 { /* Use this if you want to move a video to the right. */
+    margin-left: 10%;
+}
+
+.imgleft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.space-r7 {
+    padding-right: 7%;
+}
+
+.space-r10 {
+    padding-right: 10%;
+}
+
+.quotestyle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 2%;
+}
