@@ -89,3 +89,16 @@ body {
     font-size: large;
     margin: 2%;
 }
+
+
+/* ------------------------- Media Queries ------------------------- */
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .flexratio-container {
+        aspect-ratio: 9 / 19;
+    }
+
+}
