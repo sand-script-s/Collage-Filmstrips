@@ -1,4 +1,4 @@
-let backgrounddiv = document.getElementById('backgrounddiv');
+let bodydiv = document.getElementById('bodyelem');
 let backgroundArr = ['scripts/backgrounds/wall.jpg','scripts/backgrounds/bricks.jpg','scripts/backgrounds/stone.jpg','scripts/backgrounds/sand.jpg'];
 
 window.addEventListener('scroll', () => {
@@ -11,6 +11,6 @@ window.addEventListener('scroll', () => {
 
     let urlVar = 'url(' + backgroundArr[imageIndex] + ')';
 
-    backgrounddiv.style.backgroundImage = urlVar;
+    bodydiv.style.backgroundImage = urlVar;
 
 })
