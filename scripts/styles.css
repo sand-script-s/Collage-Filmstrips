@@ -32,6 +32,7 @@ body {
 .flexratio-container {
     aspect-ratio: 9 / 16;
     height: 100vh;
+    height: 100lvh;
 }
 
 .flex-inner {
