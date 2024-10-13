@@ -4,7 +4,9 @@ let backgroundArr = ['scripts/backgrounds/wall.jpg','scripts/backgrounds/bricks.
 window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY;
     let scrollHeightVar = document.body.scrollHeight;
-    let viewportHeight = window.innerHeight;
+    
+    let tolerance = 50; /* Tolerance for dynamic viewvports */
+    let viewportHeight = window.innerHeight + tolerance;
 
     let imageIndex = Math.floor((scrollPosition / (scrollHeightVar - viewportHeight)) * backgroundArr.length);
 
