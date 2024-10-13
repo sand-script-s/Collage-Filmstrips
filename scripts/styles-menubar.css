@@ -180,7 +180,7 @@ body {
 
 /* ------------------------- Media Queries ------------------------- */
 
-/* Phone */
+/* Tablet */
 @media (max-width: 880px) {
     
     .slide-menu {
@@ -208,6 +208,15 @@ body {
 
     .sub-menu a{
         font-size: 1.2rem;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .inner-wrapper {
+        width: 200px;
     }
 
 }
