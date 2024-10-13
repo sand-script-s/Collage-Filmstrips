@@ -1,0 +1,213 @@
+:root {
+    --transparent-purple-1: #8000ff99;
+    --transparent-purple-2: #9021ff99;
+    --logo-background-purple: #8000ff;
+}
+
+body {
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+}
+
+.fixedpos {
+    position: fixed;
+    z-index: 100;
+}
+
+.slide-menu {
+    height: 100vh;
+    width: 230px;
+    position: absolute;
+    background-image: url(images/menu-back.svg);
+}
+
+.slider-hidden {
+    transform: translateX(-230px);
+    transition: transform 0.3s ease; /* Optional: Add a smooth transition */
+    box-shadow: 0;
+}
+
+.slider-visible {
+    transform: translateX(0);
+    transition: transform 0.3s ease; /* Optional: Add a smooth transition */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.logo {
+    color: #ffffffed;
+    text-decoration-style: solid;
+    text-decoration: solid;
+    background-color: var(--logo-background-purple);
+    ;
+    font-weight: 800;
+    font-size: 2.1em;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+    border-bottom: #c9b0e3;
+    border-bottom-width: 4px;
+    border-bottom-style:inset;
+}
+
+.spacing-under-menu {
+    height: 13px;
+    background-color: var(--transparent-purple-1);
+}
+
+.menu-item {
+    position: relative;   
+    border-bottom: #c9b0e3;
+    border-bottom-width: 2px;
+    border-bottom-style:inset;
+}
+
+.menu-item a {
+    color: #fff;
+    background-color: var(--transparent-purple-1);
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 5px 25px 5px 25px;    
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-item a:hover{
+    color: #fff;
+    background-color: #7800f0;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.sub-menu a{
+    background-color: var(--transparent-purple-2);
+    padding: 5px 25px 5px 40px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.icon-span {
+    display: flex;
+    align-items: center;
+}
+
+.svgprop {    
+    fill: none;
+    stroke: #fff; 
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.toggle-hamburger {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    z-index: 110;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.toggle-hamburger .common {
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    background-color: #8000ff;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+/* -------------------------Hamburger Menu Start ------------------------- */
+
+.toggle-hamburger .top_line-state-1 {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-hamburger .middle_line-state-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-hamburger .bottom_line-state-1 {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-hamburger .top_line-state-2 {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.toggle-hamburger .bottom_line-state-2 {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.toggle-hamburger .middle_line-state-2 {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+/* ------------------------- Hamburger Menu End ------------------------- */
+
+/* ------------------------- Media Queries ------------------------- */
+
+/* Phone */
+@media (max-width: 880px) {
+    
+    .slide-menu {
+        width: 100vw;
+        position: absolute;
+    }
+
+    .slider-hidden {
+        transform: translateX(-100%);
+    }
+    
+    .slider-visible {
+        transform: translateX(0);
+    }
+
+    .menu-item a{
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4em;
+    }
+
+    .inner-wrapper {
+        width: 330px;
+    }
+
+    .sub-menu a{
+        font-size: 1.2rem;
+    }
+
+}
