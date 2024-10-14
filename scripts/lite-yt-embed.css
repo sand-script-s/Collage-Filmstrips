@@ -93,3 +93,15 @@ lite-youtube.lyt-activated > .lty-playbtn {
     white-space: nowrap;
     width: 1px;
   }
+
+/* ------------------------- Media Queries ------------------------- */
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    lite-youtube > .lty-playbtn {
+        background: no-repeat center/34px 24px;
+    }
+
+}
