@@ -18,6 +18,10 @@ body {
     user-select: none;
 }
 
+.breath {
+    padding-top: 1em;
+}
+
 .fullspan {
     display: flex;
     justify-content: center;
@@ -95,7 +99,7 @@ body {
 
 .quotestyle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+    font-size: 1em;
     margin: 2%;
 }
 
