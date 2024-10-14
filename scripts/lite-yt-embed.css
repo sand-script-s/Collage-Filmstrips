@@ -101,7 +101,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 @media (max-width: 600px) {
 
     lite-youtube > .lty-playbtn {
-        background: no-repeat center/34px 24px;
+        background-size: 51px 36px;
     }
 
 }
